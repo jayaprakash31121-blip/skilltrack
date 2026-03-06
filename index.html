@@ -122,6 +122,27 @@
 </div>
 
 <script src="script.js"></script>
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyCaqWHapPZAJdxqCSvmETeYVBs6Xukt4KA",
+  authDomain: "skilltrack-68f2e.firebaseapp.com",
+  projectId: "skilltrack-68f2e",
+  storageBucket: "skilltrack-68f2e.firebasestorage.app",
+  messagingSenderId: "744881289056",
+  appId: "1:744881289056:web:ed36c39de228311b659005",
+  measurementId: "G-DMH68DYH2F"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 </body>
 </html>
