@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SkillTrack - Data Skills Platform</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>SkillTrack</h1>
+<p>Master Python, SQL & Power BI with Daily Practice</p>
+</header>
+
+<nav>
+<button onclick="showSection('dashboard')">Dashboard</button>
+<button onclick="showSection('timetable')">Timetable</button>
+<button onclick="showSection('courses')">Courses</button>
+<button onclick="showSection('tasks')">Tasks</button>
+<button onclick="showSection('attendance')">Attendance</button>
+<button onclick="showSection('ai')">AI Mentor</button>
+</nav>
+
+<div class="container">
+
+<section id="dashboard">
+<h2>Student Progress</h2>
+
+<div class="card">
+<h3>Python Progress</h3>
+<div class="progress"><div class="bar python"></div></div>
+</div>
+
+<div class="card">
+<h3>SQL Progress</h3>
+<div class="progress"><div class="bar sql"></div></div>
+</div>
+
+<div class="card">
+<h3>Power BI Progress</h3>
+<div class="progress"><div class="bar powerbi"></div></div>
+</div>
+
+</section>
+
+<section id="timetable" class="hidden">
+<h2>Daily Study Timetable</h2>
+<table>
+<tr><th>Time</th><th>Task</th></tr>
+<tr><td>7:00 AM</td><td>Python Learning</td></tr>
+<tr><td>7:30 AM</td><td>Python Practice</td></tr>
+<tr><td>6:00 PM</td><td>SQL Learning</td></tr>
+<tr><td>7:00 PM</td><td>SQL Practice</td></tr>
+<tr><td>8:30 PM</td><td>Power BI Learning</td></tr>
+<tr><td>9:30 PM</td><td>Daily Tasks</td></tr>
+</table>
+</section>
+
+<section id="courses" class="hidden">
+<h2>Learning Roadmap</h2>
+
+<div class="course">
+<h3>Python</h3>
+<ul>
+<li>Variables & Data Types</li>
+<li>If Conditions</li>
+<li>Loops</li>
+<li>Functions</li>
+<li>Lists & Dictionaries</li>
+<li>Mini Projects</li>
+</ul>
+</div>
+
+<div class="course">
+<h3>SQL</h3>
+<ul>
+<li>Database Basics</li>
+<li>SELECT Queries</li>
+<li>WHERE Clause</li>
+<li>GROUP BY</li>
+<li>JOINS</li>
+<li>Subqueries</li>
+</ul>
+</div>
+
+<div class="course">
+<h3>Power BI</h3>
+<ul>
+<li>Interface</li>
+<li>Data Import</li>
+<li>Charts</li>
+<li>Filters</li>
+<li>Dashboards</li>
+<li>Projects</li>
+</ul>
+</div>
+
+</section>
+
+<section id="tasks" class="hidden">
+<h2>Daily Tasks</h2>
+<label><input type="checkbox"> Python: Reverse a number</label><br>
+<label><input type="checkbox"> SQL: Find top salary</label><br>
+<label><input type="checkbox"> Power BI: Create bar chart</label><br>
+</section>
+
+<section id="attendance" class="hidden">
+<h2>Attendance Tracker</h2>
+<button onclick="markAttendance()">Mark Today Present</button>
+<p id="attendanceText">Days Attended: 0</p>
+</section>
+
+<section id="ai" class="hidden">
+<h2>AI Learning Assistant</h2>
+<input id="question" placeholder="Ask about Python, SQL, Power BI">
+<button onclick="askAI()">Ask</button>
+<p id="answer"></p>
+</section>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
